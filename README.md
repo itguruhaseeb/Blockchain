@@ -11,11 +11,11 @@
 </ul></p>
 
 <p><b>Working with Anaconda and Spyder</b></p>
-<p><img src="https://github.com/itguruhaseeb/Blockchain/blob/master/anaconda.png" title="Anaconda IDE"/></p>
+<p><img src="https://github.com/itguruhaseeb/Blockchain/tree/master/doc-imagesanaconda.png" title="Anaconda IDE"/></p>
 
 <p><b>Launching Spyder and working with blockchain.py</b></p>
-<p><img src="https://github.com/itguruhaseeb/Blockchain/blob/master/spyder.png" title="Spyder IDE and blockchain.py"/></p>
+<p><img src="https://github.com/itguruhaseeb/Blockchain/tree/master/doc-images/spyder.png" title="Spyder IDE and blockchain.py"/></p>
 
 <p><b>Running blockchain.py</b></p>
-<p><img src="https://github.com/itguruhaseeb/Blockchain/blob/master/run-blockchain.png" title="Running blockchain.py"/></p>
+<p><img src="https://github.com/itguruhaseeb/Blockchain/tree/master/doc-images/run-blockchain.png" title="Running blockchain.py"/></p>
 
