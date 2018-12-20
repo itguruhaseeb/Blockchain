@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "5af8ac63-cf20-466e-8520-d4c6b19a80fb",
+		"name": "blockchain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Blockchain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/getchain",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"getchain"
+					]
+				},
+				"description": "Get's the blockchain. If there is no chain it will mine the first block and will add it to the blockchain."
+			},
+			"response": []
+		},
+		{
+			"name": "Mine or Create Block",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/mineblock",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"mineblock"
+					]
+				},
+				"description": "Creates a block and adds it to the blockchain. This is also known as mining in blockchain"
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Blockchain",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}/isvalidchain",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"isvalidchain"
+					]
+				},
+				"description": "This will return the validity of blockchain. Checks if anyone of the hash of previous block is changed from its original state"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d4d45fca-3620-409e-aaa8-ab3c78594339",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5c41bb20-c1f5-44e0-b869-0a1517fde520",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "2b96d8b6-95ec-469c-8049-215f888fcfe7",
+			"key": "host",
+			"value": "http://localhost:5000",
+			"type": "string"
+		}
+	]
+}
