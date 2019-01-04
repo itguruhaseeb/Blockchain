@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "b6a5a2ef-1b15-4d7e-8edf-8bc607e0b2e6",
+		"name": "cryptocurrency",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "connectnode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nodes\":[\"http://blockchain.haseebafsar.com:5002\",\n            \"http://blockchain.haseebafsar.com:5003\"]\n}"
+				},
+				"url": {
+					"raw": "http://blockchain.haseebafsar.com:5001/connectnode",
+					"protocol": "http",
+					"host": [
+						"blockchain",
+						"haseebafsar",
+						"com"
+					],
+					"port": "5001",
+					"path": [
+						"connectnode"
+					]
+				},
+				"description": "This request adds new nodes to the blockchain network"
+			},
+			"response": []
+		},
+		{
+			"name": "replacechain",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://blockchain.haseebafsar.com:5002/replacechain",
+					"protocol": "http",
+					"host": [
+						"blockchain",
+						"haseebafsar",
+						"com"
+					],
+					"port": "5002",
+					"path": [
+						"replacechain"
+					]
+				},
+				"description": "This request applies the consensus protocol across the blockchain network"
+			},
+			"response": []
+		},
+		{
+			"name": "addtransaction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sender\": \"6c89d6c01a1542a59f3617efe4c2d8ce\",\n    \"reciever\": \"Haseeb Afsar\",\n    \"amount\": 100\n}"
+				},
+				"url": {
+					"raw": "http://blockchain.haseebafsar.com:5001/addtransaction",
+					"protocol": "http",
+					"host": [
+						"blockchain",
+						"haseebafsar",
+						"com"
+					],
+					"port": "5001",
+					"path": [
+						"addtransaction"
+					]
+				},
+				"description": "This request adds cyrptocurrency transaction to the blockchain network"
+			},
+			"response": []
+		},
+		{
+			"name": "getchain",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://blockchain.haseebafsar.com:5002/getchain",
+					"protocol": "http",
+					"host": [
+						"blockchain",
+						"haseebafsar",
+						"com"
+					],
+					"port": "5002",
+					"path": [
+						"getchain"
+					]
+				},
+				"description": "Get's the list of chain from the current blockchain network"
+			},
+			"response": []
+		},
+		{
+			"name": "mineblock",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://blockchain.haseebafsar.com:5001/mineblock",
+					"protocol": "http",
+					"host": [
+						"blockchain",
+						"haseebafsar",
+						"com"
+					],
+					"port": "5001",
+					"path": [
+						"mineblock"
+					]
+				},
+				"description": "This request mines a block with queued transactions in the blockchain network"
+			},
+			"response": []
+		}
+	]
+}
